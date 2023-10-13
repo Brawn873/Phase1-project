@@ -8,3 +8,11 @@ playButton.addEventListener('click', () => {
 pauseButton.addEventListener('click', () => {
     musicPlayer.pause();
 });
+
+.then(data => {
+    if (data.success) {
+        // The to-do task was successfully added
+        const successMessage = document.getElementById('success-message');
+        successMessage.style.display = 'block'; // Show the success message
+    }
+})
